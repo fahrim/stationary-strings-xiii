@@ -153,17 +153,24 @@ $\mathcal{M}^2/\sigma=2\mathcal{H}_{\mathrm{YM}}$, so the numeric bridge
 $\sqrt{2\lambda_0^{\mathrm{cont}}}=3.349688$ agrees with the closed form
 $3.3914463$ to 1.23\% and with LQCD $3.405$ to 1.62\% ($2.63\,\sigma$).
 
-\textbf{Honesty caveat (audit record):} (i) In the Temple--Kato enclosure the
-only independent quantity is the Gaussian variational \emph{upper} bound
-($\mu_{\mathrm{Gauss}}=5.6467531$, i.e.\ $\lambda_0<5.6468$); the lower bound
-obtained from the FV eigenvector equals the numerical eigenvalue by the
-identity $\mathcal{S}v_0=\lambda_0v_0$ and is therefore not an independent
-lower bound. The correct statement is ``$\lambda_0<5.6468$ (variational) and
-$\lambda_0\to 5.6102$ (FV, monotone from below)''. (ii) The chiral-vacuum
-dressing factor $(1+\Lambda_{\mathrm{Meral}}^{(0)}/3)$ is an extra model
-interpretation, not a derived relation: it is what reduces the 1.23\% bridge
-deviation to 0.05\%, which is a result of the interpretation and not an
-independent validation.
+\textbf{Honesty caveat (audit record):} (i) Analytic (grid-independent)
+Temple--Kato enclosure: $H_{\mathrm{YM}}=H_{\mathrm{harm}}+V_{\mathrm{core}}$,
+$H_{\mathrm{harm}}=-(1/x)d/dx(x\,d/dx)+\alpha^2x^2$,
+$V_{\mathrm{core}}=(1+\beta_0^2)/(x^2+\beta_0^2)>0$,
+$\alpha=\mathcal{C}_{\mathrm{univ}}\sqrt{1+\mu_s^{\mathrm{Meral}}}=1.7845044613$.
+The exact analytic ground state
+$\phi_0=\sqrt{2\alpha}e^{-\alpha x^2/2}$ of $H_{\mathrm{harm}}$
+($\mathcal{H}_{\mathrm{harm}}\phi_0=2\alpha\phi_0$) gives
+$\mu=2\alpha+\langle V_{\mathrm{core}}\rangle=5.7674115648$ and
+$\sigma_H^2=\mathrm{Var}(V_{\mathrm{core}})=1.4163545522$; min-max:
+$\lambda_1>6\alpha=10.7070267677$. Temple--Kato:
+$\lambda_0\in[5.4806777821,\,5.7674115648]$ (fixed-$\alpha$) and
+$[5.3686426884,\,5.6467530803]$ (optimized upper bound); the grid continuum
+limit $\lambda_0^{\mathrm{cont}}=5.6102039939$ lies inside both. (ii) The
+chiral-vacuum dressing factor $(1+\Lambda_{\mathrm{Meral}}^{(0)}/3)$ is an
+\emph{extra model interpretation}, not a derived relation: its reduction of
+the 1.23\% bridge deviation to 0.05\% is a result of the interpretation and
+not an independent validation.
 
 \begin{table}[!htbp]
 \centering\footnotesize
