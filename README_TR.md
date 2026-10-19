@@ -23,13 +23,15 @@ Yazar: Fahri Meral · Tarih: 19 Ekim 2026 · Sürüm: v1 (Grand Proof II)
 
 ## Sonuçlar (sıfır serbest parametre)
 
-- Akı-tüpü operatörü: λ₀ = 5,9158 > 0 (OS G_c > 0, Richardson limiti ≈ 5,77);
-  aralık(0⁺⁺) = 3,3914463, LQCD 3,405 ± 0,021 ile %0,40 (0,65σ).
+- Akı-tüpü operatörü (FV, p = 2,0000): λ₀^cont = 5,610204; sayısal köprü
+  √(2λ₀) = 3,349688 (kapalı-formla %1,23); aralık(0⁺⁺) = 3,3914463,
+  LQCD 3,405 ± 0,021 ile %0,40 (0,65σ). AÇIK GERİ ÇEKME: GP-II/GP-II.1
+  `u`-formu λ₀ = 5,9158 yanlıştı (varyasyonel sınır 5,6468 ihlali).
 - Glueball spektrumu 0⁺⁺/2⁺⁺/topolojik 0⁻⁺/0*⁺⁺ ortalama %1,56 (topolojisiz
   klasik 4,8803 karşılaştırma için korunur).
-- γ_Meral = 0,29847153, Cornell 0,295 ± 0,010 ile 0,35σ; charmonium 2S–1S 581,03 MeV (%1,39);
-  UV–IR varyantı bottomoniumu 456,43 → 645,80 MeV taşır (PDG 562,96) ama charmoniumu
-  bozar — saf-IR birincildir (bkz. makale Bölüm 5).
+- γ_Meral = 0,29847153, Cornell 0,295 ± 0,010 ile 0,35σ; Yukawa-perdelemeli
+  çekirdek (δγ = 0,16352706, Rc = 1,136364 GeV⁻¹): charmonium 596,89 MeV (%1,31),
+  bottomonium 522,25 MeV (%7,24), ikisi de aynı işaretli.
 
 ## Sayısal yeniden-üretim
 

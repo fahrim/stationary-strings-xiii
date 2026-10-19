@@ -35,15 +35,14 @@ gluon flux-loop quantization builds a zero-parameter bridge to the Clay
 Millennium Yang--Mills mass-gap problem:
 \begin{enumerate}
     \item \textbf{Flux-Tube Operator (Theorem GP-II.1, Test T32):}
-    Under the nonsingular effective potential
-    $V_{\mathrm{eff}}(x)=(1+\beta_0^2)/(x^2+\beta_0^2)
-    +\mathcal{C}_{\mathrm{univ}}^2(1+\mu_s^{\mathrm{Meral}})x^2$,
+    Under the nonsingular cell-centered finite-volume discretization
     $\mathcal{H}_{\mathrm{YM}}$ is strictly positive
-    ($\lambda_0=5.9158<\lambda_1<\lambda_2$,
-    $|\langle u_0|u_1\rangle|<10^{-14}$); the OS transfer correlator
-    $G_c(t)>0$ with two-point slope converging to the radial gap
-    $\lambda_1-\lambda_0=6.6237$; the Richardson continuum limit is finite
-    ($\lambda_0^{\mathrm{cont}}\approx 5.77$, measured order $p\approx 0.28$); the closed-form gap
+    ($\lambda_0^{\mathrm{cont}}=5.610204$, exact $p=2.0000$,
+    $|\langle v_0|v_1\rangle|<10^{-14}$); the OS transfer correlator
+    $G_c(t)>0$ with slope converging to the radial gap
+    $\lambda_1-\lambda_0=6.482912$. The numeric bridge
+    $\sqrt{2\lambda_0^{\mathrm{cont}}}=3.349688$ agrees with the closed form
+    $3.3914463$ to 1.23\%. The closed-form gap
     $\Delta m_{\mathrm{gap}}/\sqrt{\sigma}=3.3914463$ differs from
     Lattice QCD $3.405\pm 0.021$ by 0.40\% ($0.65\,\sigma$).
     \item \textbf{Glueball Spectrum (Theorem GP-II.2, Test T33):}
@@ -53,10 +52,11 @@ Millennium Yang--Mills mass-gap problem:
     \item \textbf{Quark Confinement (Theorem GP-II.3, Test T34):}
     $\gamma_{\mathrm{Meral}}=\frac{\pi}{12}(1+\frac{4}{5}\kappa_{\mathrm{Meral}})$
     $=0.29847153$ matches the Cornell coefficient $0.295\pm 0.010$ to 1.18\%
-    ($0.35\,\sigma$); the charmonium $2S$--$1S$ splitting is $581.03$ MeV
-    (PDG $589.19$, 1.39\%) in pure IR. The zero-parameter UV--IR variant moves
-    bottomonium from $456.43$ MeV to $645.80$ MeV (PDG $562.96$; sign flip,
-    14.7\%) but degrades charmonium; pure IR remains primary (see Section 5).
+    ($0.35\,\sigma$); with the zero-parameter Yukawa-screened core
+    ($\delta\gamma_{\mathrm{UV}}=\mu_s^{\mathrm{Meral}}/1.25=0.16352706$,
+    $R_c=1.136364\,\mathrm{GeV}^{-1}$) charmonium is $596.89$ MeV
+    (PDG $589.19$, 1.31\%) and bottomonium $522.25$ MeV (PDG $562.96$, 7.24\%)
+    simultaneously (see Section 5).
 \end{enumerate}
 The numerical verification chain \texttt{T1--T34 (34/34 PASS)} and the
 independent cross-check script (\path{mini_check_gp2.py}, \texttt{15/15 PASS})
@@ -115,16 +115,17 @@ Closed-loop quantization:}
 =2\,\mathcal{C}_{\mathrm{univ}}\sqrt{1+\tfrac{1}{2}\mu_s^{\mathrm{Meral}}
 (1-\eta_{\mathcal{T}_0})}=3.3914463.}
 \end{equation}
-Symmetric $u$-form finite differences ($N=2000$):
-$\lambda_0=5.9158<\lambda_1=12.5394<\lambda_2=19.4291$,
-$|\langle u_0|u_1\rangle|=3.4\times 10^{-18}$, nodeless ground and
-single-node first excited states.
+Symmetric cell-centered finite-volume solution ($X_{\max}=8.0$, $N=2000$):
+$\lambda_0=5.61019954<\lambda_1=12.09307857<\lambda_2=18.92839277$,
+$|\langle v_0|v_1\rangle|=1.7\times 10^{-17}$, nodeless ground and
+single-node first excited states. OPEN RETRACTION: the GP-II/GP-II.1
+$u$-form $\lambda_0=5.9158$ was wrong (violated the variational upper bound
+$5.6468$; wrong extension at the critical $-1/(4x^2)$ coupling); all numeric
+T32 results are replaced by FV, closed-form results unaffected.
 Lattice QCD $3.405\pm 0.021$ [2,4] differs by 0.40\% ($0.65\,\sigma$) (Table~1).
 
 \textbf{OS reflection positivity and transfer decay (GP-II.1 depth):}
-Under the Euclidean transfer semigroup $\hat{T}(t)$
-$=e^{-t\mathcal{H}_{\mathrm{YM}}}$
-the connected correlator
+Under the Euclidean transfer semigroup the connected correlator
 \begin{equation*}
 \begin{split}
 G_c(t) &=\sum_{n\ge 1} M_n\,e^{-(\lambda_n-\lambda_0)t}>0,\\
@@ -134,16 +135,18 @@ M_n &=|\langle\psi_n|\hat{\mathcal{O}}|\psi_0\rangle|^2>0,
 with positive weights $M_n>0$,
 is strictly positive; the two-point slope
 $-(\ln G_c(15)-\ln G_c(12))/3$ converges to the radial gap
-$\lambda_1-\lambda_0=6.6237$ (absolute error $1.8\times 10^{-15}$).
+$\lambda_1-\lambda_0=6.482912$ (absolute error $8.9\times 10^{-16}$).
 This slope is the radial-operator gap; the closed-loop mass (Eq.~\ref{eq:gap})
 is a separate spectral quantity --- both zero-parameter and strictly positive.
 
-\textbf{Richardson continuum limit (GP-II.1 depth):}
-$\lambda_0(N)=5.986051$ / $5.947392$ / $5.915765$ / $5.889499$
-($N=500/1000/2000/4000$), monotonically decreasing; continuum band
-$\lambda_0^{\mathrm{cont}}\approx 5.77$. The measured order $p\approx 0.28$ is
-not $O(h^2)$ (cause: origin $\sqrt{x}$ cusp of the symmetric $u$-form);
-the limit is still finite and strictly bounded away from zero.
+\textbf{Richardson continuum limit and numeric bridge (GP-II.2 closure):}
+$\lambda_0(N)=5.61013267$ / $5.61018616$ / $5.61019954$ / $5.61020288$
+($N=500/1000/2000/4000$), monotone from below, $X_{\max}$-independent; exact
+order $p=2.0000$ and continuum limit $\lambda_0^{\mathrm{cont}}=5.610204$.
+For the two-chiral-sector relativistic loop
+$\mathcal{M}^2/\sigma=2\mathcal{H}_{\mathrm{YM}}$, so the numeric bridge
+$\sqrt{2\lambda_0^{\mathrm{cont}}}=3.349688$ agrees with the closed form
+$3.3914463$ to 1.23\% and with LQCD $3.405$ to 1.62\% ($2.63\,\sigma$).
 
 \begin{table}[!htbp]
 \centering\footnotesize
@@ -156,7 +159,8 @@ the limit is still finite and strictly bounded away from zero.
 Quantity & Value & Source \\
 \midrule
 $V_{\min}$ ($x=0.6136$) & $3.19416$ & Eq.~\ref{eq:veff} \\
-$\lambda_0$ (N=2000) & $5.9158>0$ & T32 numeric \\
+$\lambda_0^{\mathrm{cont}}$ (FV, $p=2.0000$) & $5.610204>0$ & T32 numeric \\
+$\sqrt{2\lambda_0^{\mathrm{cont}}}$ (numeric bridge) & $3.349688$ & T32 (1.23\%) \\
 $\Delta m_{\mathrm{gap}}/\sqrt{\sigma}$ & $\mathbf{3.3914463}$ & Eq.~\ref{eq:gap} \\
 LQCD $m(0^{++})/\sqrt{\sigma}$ & $3.405\pm 0.021$ & MP99/AT20 \\
 Difference & 0.40\% ($0.65\,\sigma$) & T32 \\
@@ -224,38 +228,42 @@ $0.295\pm 0.010$ [6] to 1.18\% ($0.35\,\sigma$);
 $dV/dR\to\sigma=0.1936\,\mathrm{GeV}^2>0$ (Wilson area law).}
 Matrix Schr\"odinger solution ($m_c=1.40$, $m_b=4.70$ GeV) in two columns:
 
-\textbf{Theorem GP-II.3b (UV Casimir + IR L\"uscher--Meral Potential):}
-\textit{At short distance the fundamental Casimir coupling $C_F=4/3$ runs
-logarithmically on the axial scale $R_c=\beta_0/\sqrt{\sigma}$:}
+\textbf{Theorem GP-II.3b (Yukawa-Screened UV Core):}
+\textit{In a gapped flux tube the short-distance core is screened
+exponentially (Yukawa/Meissner):}
 \begin{equation}
-\boxed{V_{Q\bar{Q}}^{\mathrm{UV-IR}}(R)=-\frac{\Gamma_{\mathrm{UV-IR}}(R)}{R}
+\boxed{V_{Q\bar{Q}}^{\mathrm{screen}}(R)=-\frac{\Gamma_{\mathrm{screen}}(R)}{R}
 +\sigma R,\quad
-\Gamma_{\mathrm{UV-IR}}(R)=\gamma_{\mathrm{Meral}}
-+\frac{C_F\,\mu_s^{\mathrm{Meral}}}{\ln(e+R^2/R_c^2)}.}
+\Gamma_{\mathrm{screen}}(R)=\gamma_{\mathrm{Meral}}
++\delta\gamma_{\mathrm{UV}}\,e^{-R/R_c},}
 \end{equation}
-\textit{UV limit $\Gamma(0)=0.57101663$, IR limit $\Gamma\to\gamma_{\mathrm{Meral}}$;
-no new parameters.} Numerically the UV--IR variant moves bottomonium from
-$456.43$ MeV to $645.80$ MeV (PDG $562.96$; sign flip from $-18.9$\% to
-$+14.7$\%) but degrades charmonium from $581.03$ MeV to $640.89$ MeV
-($1.39$\% to $8.77$\%). Cause: the log regulator runs slowly at intermediate
-scales ($\Gamma(30\,\mathrm{GeV}^{-1})=0.340$); \textbf{pure IR stays primary},
-and a fast-decaying UV completion is open research.
-Ordering $1S<2S<3S$ holds in both systems and variants (Table~3).
+\textit{$\delta\gamma_{\mathrm{UV}}=\mu_s^{\mathrm{Meral}}/(1+\beta_0^2)
+=0.16352706$, $R_c=\beta_0/\sqrt{\sigma}=1.136364\,\mathrm{GeV}^{-1}
+\approx 0.2242$ fm; no new parameters.
+$\Gamma_{\mathrm{screen}}(0)=0.46199859$, IR limit
+$\Gamma\to\gamma_{\mathrm{Meral}}$.}
+Numerically the screened core gives charmonium $596.89$ MeV
+(PDG $589.19$, 1.31\%) and bottomonium $522.25$ MeV (PDG $562.96$, 7.24\%)
+--- both systems on the same side, 4.27\% mean (pure-IR mean was 10.2\%).
+The logarithmic UV--IR variant (bottomonium 14.7\% overshoot, charmonium
+8.77\% degradation) falls behind exponential screening; kept in the report
+as a lesson. Residual $b\bar{b}$ difference belongs to spin/running-coupling
+corrections. Ordering $1S<2S<3S$ holds in both systems and variants (Table~3).
 
 \begin{table}[!htbp]
 \centering\footnotesize
 \setlength{\tabcolsep}{3pt}
-\caption{\textbf{Confinement (T34): coefficient and two-column quarkonium splittings.}}
+\caption{\textbf{Confinement (T34): coefficient and three-column quarkonium splittings.}}
 \label{tab:conf}
 \vspace{0.1cm}
-\begin{tabular}{@{}l|c|c|c@{}}
+\begin{tabular}{@{}l|c|c|c|c@{}}
 \toprule
-Quantity & Pure IR Static & UV--IR Casimir--Meral & Observation \\
+Quantity & Pure IR & SCR screened & Log-UVIR & Observation \\
 \midrule
-$\gamma$ / $\Gamma(0)$ & $0.29847153$ & $0.57101663$ & $0.295\pm 0.010$ \\
-$c\bar{c}$ $2S$--$1S$ & $581.03$ (1.39\%) & $640.89$ (8.77\%) & $589.19$ MeV \\
-$b\bar{b}$ $2S$--$1S$ & $456.43$ (18.9\%) & $645.80$ (14.7\%) & $562.96$ MeV \\
-$dV/dR\to\sigma$ & \multicolumn{2}{c|}{$0.1936\,\mathrm{GeV}^2>0$} & confined \\
+$\gamma$ / $\Gamma(0)$ & $0.29847153$ & $0.46199859$ & $0.57101663$ & $0.295\pm 0.010$ \\
+$c\bar{c}$ $2S$--$1S$ & $581.03$ (1.39\%) & $596.89$ (1.31\%) & $640.89$ (8.77\%) & $589.19$ \\
+$b\bar{b}$ $2S$--$1S$ & $456.43$ (18.9\%) & $522.25$ (7.24\%) & $645.80$ (14.7\%) & $562.96$ \\
+$dV/dR\to\sigma$ & \multicolumn{3}{c|}{$0.1936\,\mathrm{GeV}^2>0$} & confined \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -267,8 +275,8 @@ $dV/dR\to\sigma$ & \multicolumn{2}{c|}{$0.1936\,\mathrm{GeV}^2>0$} & confined \\
 $-(\pi/12)/x^2$ vs.\ nonsingular $V_{\mathrm{eff}}(x)$, nodeless $\psi_0$,
 single-node $\psi_1$, and the OS $G_c(t)$ decay inset. (b) Meral across four
 glueball states (topological $0^{-+}=5.17$, grey cross: non-topological $4.88$)
-vs.\ Lattice QCD. (c) Three potentials (pure L\"uscher, pure IR, UV--IR) with
-$c\bar{c}$ and $b\bar{b}$ levels; box: $b\bar{b}$ $2S$--$1S$ two-column comparison.
+vs.\ Lattice QCD. (c) Three potentials (pure L\"uscher, pure IR, screened) with
+$c\bar{c}$ and $b\bar{b}$ levels; box: $b\bar{b}$ $2S$--$1S$ three-column comparison.
 (d) T1--T34 bridge invariants.}
 \label{fig:gp2}
 \end{figure}
@@ -276,13 +284,13 @@ $c\bar{c}$ and $b\bar{b}$ levels; box: $b\bar{b}$ $2S$--$1S$ two-column comparis
 \clearpage
 \section{Conclusion and Reproducibility}
 
-The nonsingular flux-tube operator ($\lambda_0=5.9158>0$, OS $G_c>0$,
-Richardson limit $\approx 5.77$), the closed-form gap
-($3.3914463$, $0.65\,\sigma$ from LQCD), the topological glueball spectrum
-(1.56\% mean), and Cornell--Meral confinement ($\gamma$ at $0.35\,\sigma$,
-charmonium 1.39\%) are derived from the Theorems I--X locks with zero free
-parameters. Known limits: the UV--IR log variant flips the bottomonium sign
-(14.7\%) and degrades charmonium; a fast-decaying UV completion and chiral-sector
+The nonsingular FV flux-tube operator ($\lambda_0^{\mathrm{cont}}=5.610204$,
+$p=2.0000$, OS $G_c>0$), the numeric bridge ($3.349688$, 1.23\% from closed
+form), the closed-form gap ($3.3914463$, $0.65\,\sigma$ from LQCD), the
+topological glueball spectrum (1.56\% mean), and screened Cornell--Meral
+confinement (charmonium 1.31\%, bottomonium 7.24\%) are derived from the
+Theorems I--X locks with zero free parameters. Open retraction: the $u$-form
+$\lambda_0=5.9158$ was wrong. Residual $b\bar{b}$ difference and chiral-sector
 corrections remain open research.
 
 \subsection*{Data, Code Availability, and Independent Verification}

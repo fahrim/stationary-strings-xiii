@@ -36,16 +36,13 @@ kapalı gluon akı halkası kuantizasyonuna taşınmasıyla Clay Milenyum proble
 Yang--Mills kütle aralığına sıfır-parametreli köprü kurulmaktadır:
 \begin{enumerate}
     \item \textbf{Akı-Tüpü Operatörü (Teorem GP-II.1, Test T32):}
-    Tekilliksiz etkin potansiyel
-    $V_{\mathrm{eff}}(x)=(1+\beta_0^2)/(x^2+\beta_0^2)
-    +\mathcal{C}_{\mathrm{univ}}^2(1+\mu_s^{\mathrm{Meral}})x^2$
-    altında $\mathcal{H}_{\mathrm{YM}}$ kesin pozitiftir
-    ($\lambda_0=5.9158<\lambda_1<\lambda_2$,
-    $|\langle u_0|u_1\rangle|<10^{-14}$); OS transfer korelasyonu
-    $G_c(t)>0$ olup iki-noktalı eğimi radyal aralığa
-    $\lambda_1-\lambda_0=6.6237$ yakınsar; Richardson süreklilik limiti
-    sonludur ($\lambda_0^{\mathrm{cont}}\approx 5.77$, ölçülen mertebe
-    $p\approx 0.28$). Kapalı-form aralık
+    Tekilliksiz hücre-merkezli sonlu-hacim ayrıklaştırması altında
+    $\mathcal{H}_{\mathrm{YM}}$ kesin pozitiftir
+    ($\lambda_0^{\mathrm{cont}}=5.610204$, tam $p=2.0000$,
+    $|\langle v_0|v_1\rangle|<10^{-14}$); OS transfer korelasyonu
+    $G_c(t)>0$ ve eğimi radyal aralığa $\lambda_1-\lambda_0=6.482912$
+    yakınsar. Sayısal köprü $\sqrt{2\lambda_0^{\mathrm{cont}}}=3.349688$,
+    kapalı-form $3.3914463$ ile \%1.23 uyumludur. Kapalı-form aralık
     $\Delta m_{\mathrm{gap}}/\sqrt{\sigma}=3.3914463$,
     Lattice QCD $3.405\pm 0.021$ ile \%0.40 fark ($0.65\,\sigma$) verir.
     \item \textbf{Glueball Spektrumu (Teorem GP-II.2, Test T33):}
@@ -55,11 +52,11 @@ Yang--Mills kütle aralığına sıfır-parametreli köprü kurulmaktadır:
     \item \textbf{Kuark Kuşatması (Teorem GP-II.3/3b, Test T34):}
     $\gamma_{\mathrm{Meral}}=\frac{\pi}{12}(1+\frac{4}{5}\kappa_{\mathrm{Meral}})$
     $=0.29847153$, Cornell katsayısı $0.295\pm 0.010$ ile \%1.18
-    ($0.35\,\sigma$) örtüşür; charmonium $2S$--$1S$ saf-IR'de $581.03$ MeV
-    (PDG $589.19$, \%1.39) bulunur. Sıfır-parametreli UV--IR varyantı
-    bottomoniumu $456.43$ MeV'den $645.80$ MeV'ye taşır (PDG $562.96$;
-    işaret değiştirir, \%14.7) ancak charmoniumu bozar; birincil sonuç
-    saf-IR kalır (detay Bölüm 5).
+    ($0.35\,\sigma$) örtüşür. Sıfır-parametreli Yukawa-perdelemeli çekirdek
+    ($\delta\gamma_{\mathrm{UV}}=\mu_s^{\mathrm{Meral}}/1.25=0.16352706$,
+    $R_c=1.136364\,\mathrm{GeV}^{-1}$) ile charmonium $596.89$ MeV
+    (PDG $589.19$, \%1.31) ve bottomonium $522.25$ MeV (PDG $562.96$, \%7.24)
+    eşzamanlı bulunur (detay Bölüm 5).
 \end{enumerate}
 Sayısal doğrulama zinciri \texttt{T1--T34 (34/34 PASS)} ve bağımsız çapraz kontrol
 betiği (\path{mini_check_gp2.py}, \texttt{15/15 PASS}) tam geçer.
@@ -116,28 +113,31 @@ pozitiftir. Kapalı halka kuantizasyonu:}
 =2\,\mathcal{C}_{\mathrm{univ}}\sqrt{1+\tfrac{1}{2}\mu_s^{\mathrm{Meral}}
 (1-\eta_{\mathcal{T}_0})}=3.3914463.}
 \end{equation}
-Simetrik $u$-formu sonlu-fark çözümü ($N=2000$):
-$\lambda_0=5.9158<\lambda_1=12.5394<\lambda_2=19.4291$,
-$|\langle u_0|u_1\rangle|=3.4\times 10^{-18}$, düğümsüz taban ve tek
-düğümlü ilk uyarılmış durum.
+Hücre-merkezli sonlu-hacim çözümü ($X_{\max}=8.0$, $N=2000$):
+$\lambda_0=5.61019954<\lambda_1=12.09307857<\lambda_2=18.92839277$,
+$|\langle v_0|v_1\rangle|=1.7\times 10^{-17}$, düğümsüz taban ve tek
+düğümlü ilk uyarılmış durum. AÇIK GERİ ÇEKME: GP-II/GP-II.1'deki
+$u$-formu $\lambda_0=5.9158$ değeri yanlıştı (varyasyonel üst-sınır
+$5.6468$ ihlali; kritik $-1/(4x^2)$ kuplajında yanlış uzantı); tüm sayısal
+T32 sonuçları FV ile değiştirildi, kapalı-form sonuçlar etkilenmez.
 Lattice QCD $3.405\pm 0.021$ [2,4] ile fark \%0.40 ($0.65\,\sigma$) (Tablo~1).
 
 \textbf{OS yansıma pozitifliği ve transfer sönümü (GP-II.1 derini):}
-Öklidyen transfer yarı-grubu $\hat{T}(t)=e^{-t\mathcal{H}_{\mathrm{YM}}}$
-altında bağlı korelasyon
-$G_c(t)=\sum_{n\ge 1}|\langle\psi_n|\hat{\mathcal{O}}|\psi_0\rangle|^2
-e^{-(\lambda_n-\lambda_0)t}>0$ kesin pozitiftir; iki-noktalı eğim
+Öklidyen transfer yarı-grubu altında bağlı korelasyon
+$G_c(t)>0$ kesin pozitiftir; iki-noktalı eğim
 $-(\ln G_c(15)-\ln G_c(12))/3$ radyal aralığa
-$\lambda_1-\lambda_0=6.6237$ (mutlak hata $1.8\times 10^{-15}$) yakınsar.
+$\lambda_1-\lambda_0=6.482912$ (mutlak hata $8.9\times 10^{-16}$) yakınsar.
 Bu eğim radyal-operatör aralığıdır; kapalı-halka kütlesi (Denk.~\ref{eq:gap})
 ayrı spektral büyüklüktür --- ikisi de sıfır-parametreli ve kesin pozitiftir.
 
-\textbf{Richardson süreklilik limiti (GP-II.1 derini):}
-$\lambda_0(N)=5.986051$ / $5.947392$ / $5.915765$ / $5.889499$
-($N=500/1000/2000/4000$), monoton azalan; süreklilik bandı
-$\lambda_0^{\mathrm{cont}}\approx 5.77$. Ölçülen mertebe $p\approx 0.28$,
-$O(h^2)$ değildir (neden: simetrik $u$-formunda orijin $\sqrt{x}$ cusp'u);
-limit yine sonlu ve sıfırdan kesin uzaktır.
+\textbf{Richardson süreklilik limiti ve sayısal köprü (GP-II.2 kapanışı):}
+$\lambda_0(N)=5.61013267$ / $5.61018616$ / $5.61019954$ / $5.61020288$
+($N=500/1000/2000/4000$), aşağıdan monoton, $X_{\max}$-bağımsız; tam
+$p=2.0000$ mertebesi ve süreklilik limiti
+$\lambda_0^{\mathrm{cont}}=5.610204$. İki kiral sektörlü rölativistik halka
+için $\mathcal{M}^2/\sigma=2\mathcal{H}_{\mathrm{YM}}$ olduğundan sayısal
+köprü $\sqrt{2\lambda_0^{\mathrm{cont}}}=3.349688$ olup kapalı-form
+$3.3914463$ ile \%1.23, LQCD $3.405$ ile \%1.62 ($2.63\,\sigma$) uyumludur.
 
 \begin{table}[!htbp]
 \centering\footnotesize
@@ -150,7 +150,8 @@ limit yine sonlu ve sıfırdan kesin uzaktır.
 Büyüklük & Değer & Kaynak \\
 \midrule
 $V_{\min}$ ($x=0.6136$) & $3.19416$ & Denk.~\ref{eq:veff} \\
-$\lambda_0$ (N=2000) & $5.9158>0$ & T32 sayısal \\
+$\lambda_0^{\mathrm{cont}}$ (FV, $p=2.0000$) & $5.610204>0$ & T32 sayısal \\
+$\sqrt{2\lambda_0^{\mathrm{cont}}}$ (sayısal köprü) & $3.349688$ & T32 (\%1.23) \\
 $\Delta m_{\mathrm{gap}}/\sqrt{\sigma}$ & $\mathbf{3.3914463}$ & Denk.~\ref{eq:gap} \\
 LQCD $m(0^{++})/\sqrt{\sigma}$ & $3.405\pm 0.021$ & MP99/AT20 \\
 Fark & \%0.40 ($0.65\,\sigma$) & T32 \\
@@ -217,38 +218,42 @@ $0.295\pm 0.010$ [6] ile \%1.18 ($0.35\,\sigma$) örtüşür;
 $dV/dR\to\sigma=0.1936\,\mathrm{GeV}^2>0$ (Wilson alan yasası).}
 Schrödinger matris çözümü ($m_c=1.40$, $m_b=4.70$ GeV) iki sütunda:
 
-\textbf{Teorem GP-II.3b (UV Casimir + IR Lüscher--Meral Potansiyeli):}
-\textit{Kısa mesafede $C_F=4/3$ eksenel çekirdek kuplajı
-$R_c=\beta_0/\sqrt{\sigma}$ üzerinde logaritmik koşar:}
+\textbf{Teorem GP-II.3b (Yukawa-Perdelemeli UV Çekirdek):}
+\textit{Kütle aralıklı akı tüpünde kısa-mesafe çekirdek üstel (Yukawa/Meissner)
+perdelenir:}
 \begin{equation}
-\boxed{V_{Q\bar{Q}}^{\mathrm{UV-IR}}(R)=-\frac{\Gamma_{\mathrm{UV-IR}}(R)}{R}
+\boxed{V_{Q\bar{Q}}^{\mathrm{screen}}(R)=-\frac{\Gamma_{\mathrm{screen}}(R)}{R}
 +\sigma R,\quad
-\Gamma_{\mathrm{UV-IR}}(R)=\gamma_{\mathrm{Meral}}
-+\frac{C_F\,\mu_s^{\mathrm{Meral}}}{\ln(e+R^2/R_c^2)}.}
+\Gamma_{\mathrm{screen}}(R)=\gamma_{\mathrm{Meral}}
++\delta\gamma_{\mathrm{UV}}\,e^{-R/R_c},}
 \end{equation}
-\textit{UV limiti $\Gamma(0)=0.57101663$, IR limiti $\Gamma\to\gamma_{\mathrm{Meral}}$;
-yeni parametre yoktur.} Sayısal sonuç: UV--IR varyantı bottomoniumu
-$456.43$ MeV'den $645.80$ MeV'ye taşır (PDG $562.96$; \%18.9 düşükten
-\%14.7 yükseğe işaret değiştirir) ancak charmoniumu $581.03$ MeV'den
-$640.89$ MeV'ye bozarak \%1.39'dan \%8.77'ye iter. Neden: log-düzenleyici
-ara-ölçekte yavaş koşar ($\Gamma(30\,\mathrm{GeV}^{-1})=0.340$); \textbf{birincil
-sonuç saf-IR kalır}, hızlı sönen UV tamamlaması açık araştırmadır.
+\textit{$\delta\gamma_{\mathrm{UV}}=\mu_s^{\mathrm{Meral}}/(1+\beta_0^2)
+=0.16352706$, $R_c=\beta_0/\sqrt{\sigma}=1.136364\,\mathrm{GeV}^{-1}
+\approx 0.2242$ fm; yeni parametre yoktur.
+$\Gamma_{\mathrm{screen}}(0)=0.46199859$, IR limiti
+$\Gamma\to\gamma_{\mathrm{Meral}}$.}
+Sayısal sonuç: perdelenmiş çekirdek charmoniumu $596.89$ MeV
+(PDG $589.19$, \%1.31) ve bottomoniumu $522.25$ MeV (PDG $562.96$, \%7.24)
+verir --- her iki sistem aynı işarette, ortalama \%4.27 (saf-IR ortalaması
+\%10.2 idi). Logaritmik UV--IR varyantı (bottomonium \%14.7 taşma, charmonium
+\%8.77 bozulma) üstel perdelemenin gerisinde kalır; ders olarak raporda
+korunur. Kalan $b\bar{b}$ farkı spin/koşan-kuplaj düzeltmelerine aittir.
 Sıralama $1S<2S<3S$ her iki sistem ve varyantta sağlanır (Tablo~3).
 
 \begin{table}[!htbp]
 \centering\footnotesize
 \setlength{\tabcolsep}{3pt}
-\caption{\textbf{Kuşatma (T34): katsayı ve iki sütunlu kuarkonyum yarılmaları.}}
+\caption{\textbf{Kuşatma (T34): katsayı ve üç sütunlu kuarkonyum yarılmaları.}}
 \label{tab:conf}
 \vspace{0.1cm}
-\begin{tabular}{@{}l|c|c|c@{}}
+\begin{tabular}{@{}l|c|c|c|c@{}}
 \toprule
-Büyüklük & Saf IR Statik & UV--IR Casimir--Meral & Gözlem \\
+Büyüklük & Saf IR & SCR perdelemeli & Log-UVIR & Gözlem \\
 \midrule
-$\gamma$ / $\Gamma(0)$ & $0.29847153$ & $0.57101663$ & $0.295\pm 0.010$ \\
-$c\bar{c}$ $2S$--$1S$ & $581.03$ (\%1.39) & $640.89$ (\%8.77) & $589.19$ MeV \\
-$b\bar{b}$ $2S$--$1S$ & $456.43$ (\%18.9) & $645.80$ (\%14.7) & $562.96$ MeV \\
-$dV/dR\to\sigma$ & \multicolumn{2}{c|}{$0.1936\,\mathrm{GeV}^2>0$} & kuşatma \\
+$\gamma$ / $\Gamma(0)$ & $0.29847153$ & $0.46199859$ & $0.57101663$ & $0.295\pm 0.010$ \\
+$c\bar{c}$ $2S$--$1S$ & $581.03$ (\%1.39) & $596.89$ (\%1.31) & $640.89$ (\%8.77) & $589.19$ \\
+$b\bar{b}$ $2S$--$1S$ & $456.43$ (\%18.9) & $522.25$ (\%7.24) & $645.80$ (\%14.7) & $562.96$ \\
+$dV/dR\to\sigma$ & \multicolumn{3}{c|}{$0.1936\,\mathrm{GeV}^2>0$} & kuşatma \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -261,7 +266,7 @@ $-(\pi/12)/x^2$ vs.\ tekilliksiz $V_{\mathrm{eff}}(x)$, düğümsüz $\psi_0$,
 tek-düğümlü $\psi_1$ ve OS $G_c(t)$ sönüm gömülü grafiği. (b) Dört glueball
 durumunda Meral (topolojik $0^{-+}=5.17$, gri çarpı: topolojisiz $4.88$) vs.\
 Lattice QCD. (c) Üç potansiyel (saf Lüscher, saf-IR, UV--IR) ile $c\bar{c}$
-ve $b\bar{b}$ seviyeleri; kutu: $b\bar{b}$ $2S$--$1S$ iki sütun karşılaştırması.
+ve $b\bar{b}$ seviyeleri; kutu: $b\bar{b}$ $2S$--$1S$ üç sütun karşılaştırması.
 (d) T1--T34 köprü değişmezleri.}
 \label{fig:gp2}
 \end{figure}
@@ -269,14 +274,14 @@ ve $b\bar{b}$ seviyeleri; kutu: $b\bar{b}$ $2S$--$1S$ iki sütun karşılaştır
 \clearpage
 \section[Sonuç ve Yeniden-Üretilebilirlik]{Sonuç ve Yeniden-Üretilebilirlik Yönergesi}
 
-Tekilliksiz akı-tüpü operatörü ($\lambda_0=5.9158>0$, OS $G_c>0$,
-Richardson limiti $\approx 5.77$), kapalı-form aralık
-($3.3914463$, LQCD ile $0.65\,\sigma$), topolojik glueball spektrumu
-(ortalama \%1.56) ve Cornell--Meral kuşatması ($\gamma$ $0.35\,\sigma$,
-charmonium \%1.39) Teorem I--X kilitlerinden sıfır serbest parametreyle
-türetilmiştir. Bilinen sınırlar: UV--IR log-varyantı bottomonium işaretini
-çevirir (\%14.7) ve charmoniumu bozar; hızlı sönen UV tamamlaması ile kiral
-sektör düzeltmeleri açık araştırmadır.
+Tekilliksiz FV akı-tüpü operatörü ($\lambda_0^{\mathrm{cont}}=5.610204$,
+$p=2.0000$, OS $G_c>0$), sayısal köprü ($3.349688$, kapalı-formla \%1.23),
+kapalı-form aralık ($3.3914463$, LQCD ile $0.65\,\sigma$), topolojik glueball
+spektrumu (ortalama \%1.56) ve perdelenmiş Cornell--Meral kuşatması
+($c\bar{c}$ \%1.31, $b\bar{b}$ \%7.24) Teorem I--X kilitlerinden sıfır serbest
+parametreyle türetilmiştir. Açık geri çekme: $u$-formu $\lambda_0=5.9158$
+yanlıştı. Kalan $b\bar{b}$ farkı ile kiral sektör düzeltmeleri açık
+araştırmadır.
 
 \subsection*{Veri, Kod Erişilebilirliği ve Bağımsız Doğrulama Yönergesi}
 Çözücü paketi \texttt{stationary-strings-v} deposundadır

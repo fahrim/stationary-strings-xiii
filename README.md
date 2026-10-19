@@ -23,13 +23,15 @@ Author: Fahri Meral · Date: October 19, 2026 · Version: v1 (Grand Proof II)
 
 ## Results (zero free parameters)
 
-- Flux-tube operator: λ₀ = 5.9158 > 0 (OS G_c > 0, Richardson limit ≈ 5.77);
-  gap(0⁺⁺) = 3.3914463 vs LQCD 3.405 ± 0.021 (0.40%, 0.65σ).
+- Flux-tube operator (FV, p = 2.0000): λ₀^cont = 5.610204; numeric bridge
+  √(2λ₀) = 3.349688 (1.23% from closed form); gap(0⁺⁺) = 3.3914463
+  vs LQCD 3.405 ± 0.021 (0.40%, 0.65σ). OPEN RETRACTION: the GP-II/GP-II.1
+  u-form λ₀ = 5.9158 was wrong (violated the variational bound 5.6468).
 - Glueball spectrum 0⁺⁺/2⁺⁺/topological 0⁻⁺/0*⁺⁺ mean 1.56% (non-topological
   classic 4.8803 kept for comparison).
-- γ_Meral = 0.29847153 vs Cornell 0.295 ± 0.010 (0.35σ); charmonium 2S–1S 581.03 MeV (1.39%);
-  UV–IR variant moves bottomonium 456.43 → 645.80 MeV (PDG 562.96) but degrades
-  charmonium — pure IR stays primary (see paper Section 5).
+- γ_Meral = 0.29847153 vs Cornell 0.295 ± 0.010 (0.35σ); Yukawa-screened core
+  (δγ = 0.16352706, Rc = 1.136364 GeV⁻¹): charmonium 596.89 MeV (1.31%),
+  bottomonium 522.25 MeV (7.24%), both same-sided.
 
 ## Numerical reproduction
 
