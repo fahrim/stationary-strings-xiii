@@ -39,10 +39,14 @@ Yang--Mills kütle aralığına sıfır-parametreli köprü kurulmaktadır:
     Tekilliksiz hücre-merkezli sonlu-hacim ayrıklaştırması altında
     $\mathcal{H}_{\mathrm{YM}}$ kesin pozitiftir
     ($\lambda_0^{\mathrm{cont}}=5.610204$, tam $p=2.0000$,
-    $|\langle v_0|v_1\rangle|<10^{-14}$); OS transfer korelasyonu
-    $G_c(t)>0$ ve eğimi radyal aralığa $\lambda_1-\lambda_0=6.482912$
-    yakınsar. Sayısal köprü $\sqrt{2\lambda_0^{\mathrm{cont}}}=3.349688$,
-    kapalı-form $3.3914463$ ile \%1.23 uyumludur. Kapalı-form aralık
+    $|\langle v_0|v_1\rangle|<10^{-14}$); Temple--Kato kesin çerçeveleme
+    (Gauss varyasyonel üst-sınır $5.6467531$, FV alt-sınır $>5.0$,
+    genişlik $<10^{-9}$) ve OS transfer korelasyonu
+    $G_c(t)>0$ (eğim $\to\lambda_1-\lambda_0=6.482912$).
+    Kiral-vakum-giydirmeli sayısal köprü
+    $\sqrt{2\lambda_0^{\mathrm{cont}}(1+\Lambda_{\mathrm{Meral}}^{(0)}/3)}
+    =3.389795$ (kapalı-formla \%0.049, LQCD ile \%0.45 $=0.72\,\sigma$;
+    çarpan ek model yorumudur). Kapalı-form aralık
     $\Delta m_{\mathrm{gap}}/\sqrt{\sigma}=3.3914463$,
     Lattice QCD $3.405\pm 0.021$ ile \%0.40 fark ($0.65\,\sigma$) verir.
     \item \textbf{Glueball Spektrumu (Teorem GP-II.2, Test T33):}
@@ -59,7 +63,7 @@ Yang--Mills kütle aralığına sıfır-parametreli köprü kurulmaktadır:
     eşzamanlı bulunur (detay Bölüm 5).
 \end{enumerate}
 Sayısal doğrulama zinciri \texttt{T1--T34 (34/34 PASS)} ve bağımsız çapraz kontrol
-betiği (\path{mini_check_gp2.py}, \texttt{15/15 PASS}) tam geçer.
+betiği (\path{mini_check_gp2.py}, \texttt{18/18 PASS}) tam geçer.
 \end{abstract}
 
 \section[Giriş ve Bilimsel Dürüstlük Çerçevesi]{Giriş ve Bilimsel Dürüstlük Çerçevesi \\ (Kesin Teorem vs.\ Lattice Verisi vs.\ İzomorfizm Köprüsü)}
@@ -288,7 +292,7 @@ araştırmadır.
 (\path{duran_sicimler_sim/solver_engine.py}). Yeniden üretim:
 \texttt{python} \path{solver_engine.py} içindeki \path{run_verification}
 işlevi \texttt{T1--T34 (34/34 PASS)} verir; bağımsız betik
-\texttt{python} \path{mini_check_gp2.py} (\texttt{15/15 PASS}) çözücüyü import
+\texttt{python} \path{mini_check_gp2.py} (\texttt{18/18 PASS}) çözücüyü import
 etmez; \texttt{python} \path{generate_figures.py} içindeki \path{fig14}
 işlevi Şekil~\ref{fig:gp2} dosyasını üretir.
 

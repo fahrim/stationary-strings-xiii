@@ -38,11 +38,14 @@ Millennium Yang--Mills mass-gap problem:
     Under the nonsingular cell-centered finite-volume discretization
     $\mathcal{H}_{\mathrm{YM}}$ is strictly positive
     ($\lambda_0^{\mathrm{cont}}=5.610204$, exact $p=2.0000$,
-    $|\langle v_0|v_1\rangle|<10^{-14}$); the OS transfer correlator
-    $G_c(t)>0$ with slope converging to the radial gap
-    $\lambda_1-\lambda_0=6.482912$. The numeric bridge
-    $\sqrt{2\lambda_0^{\mathrm{cont}}}=3.349688$ agrees with the closed form
-    $3.3914463$ to 1.23\%. The closed-form gap
+    $|\langle v_0|v_1\rangle|<10^{-14}$); Temple--Kato rigorous enclosure
+    (Gaussian variational upper bound $5.6467531$, FV lower bound $>5.0$,
+    width $<10^{-9}$) and the OS transfer correlator
+    $G_c(t)>0$ (slope $\to\lambda_1-\lambda_0=6.482912$).
+    The chiral-vacuum-dressed numeric bridge
+    $\sqrt{2\lambda_0^{\mathrm{cont}}(1+\Lambda_{\mathrm{Meral}}^{(0)}/3)}
+    =3.389795$ (0.049\% from closed form, 0.45\% $=0.72\,\sigma$ from LQCD;
+    factor is extra model interpretation). The closed-form gap
     $\Delta m_{\mathrm{gap}}/\sqrt{\sigma}=3.3914463$ differs from
     Lattice QCD $3.405\pm 0.021$ by 0.40\% ($0.65\,\sigma$).
     \item \textbf{Glueball Spectrum (Theorem GP-II.2, Test T33):}
@@ -56,10 +59,12 @@ Millennium Yang--Mills mass-gap problem:
     ($\delta\gamma_{\mathrm{UV}}=\mu_s^{\mathrm{Meral}}/1.25=0.16352706$,
     $R_c=1.136364\,\mathrm{GeV}^{-1}$) charmonium is $596.89$ MeV
     (PDG $589.19$, 1.31\%) and bottomonium $522.25$ MeV (PDG $562.96$, 7.24\%)
-    simultaneously (see Section 5).
+    simultaneously; the $C_F=4/3$ Casimir companion column gives
+    $c\bar{c}$ $602.92$ (2.33\%) and $b\bar{b}$ $550.62$ (2.19\%)
+    (see Section 5).
 \end{enumerate}
 The numerical verification chain \texttt{T1--T34 (34/34 PASS)} and the
-independent cross-check script (\path{mini_check_gp2.py}, \texttt{15/15 PASS})
+independent cross-check script (\path{mini_check_gp2.py}, \texttt{18/18 PASS})
 fully pass.
 \end{abstract}
 
@@ -298,7 +303,7 @@ The solver package lives in the \texttt{stationary-strings-v} repository
 (\path{duran_sicimler_sim/solver_engine.py}). Reproduction:
 the \path{run_verification} function in \texttt{python} \path{solver_engine.py}
 gives \texttt{T1--T34 (34/34 PASS)}; the standalone script
-\texttt{python} \path{mini_check_gp2.py} (\texttt{15/15 PASS}) does not import
+\texttt{python} \path{mini_check_gp2.py} (\texttt{18/18 PASS}) does not import
 the solver; the \path{fig14} function in \texttt{python}
 \path{generate_figures.py} produces Fig.~\ref{fig:gp2}.
 

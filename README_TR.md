@@ -31,7 +31,8 @@ Yazar: Fahri Meral · Tarih: 19 Ekim 2026 · Sürüm: v1 (Grand Proof II)
   klasik 4,8803 karşılaştırma için korunur).
 - γ_Meral = 0,29847153, Cornell 0,295 ± 0,010 ile 0,35σ; Yukawa-perdelemeli
   çekirdek (δγ = 0,16352706, Rc = 1,136364 GeV⁻¹): charmonium 596,89 MeV (%1,31),
-  bottomonium 522,25 MeV (%7,24), ikisi de aynı işaretli.
+  bottomonium 522,25 MeV (%7,24), ikisi de aynı işaretli; C_F = 4/3 Casimir
+  tamamlayıcı sütunu: c-c̄ 602,92 (%2,33), b-b̄ 550,62 (%2,19).
 
 ## Sayısal yeniden-üretim
 

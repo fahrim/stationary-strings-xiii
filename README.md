@@ -31,7 +31,8 @@ Author: Fahri Meral · Date: October 19, 2026 · Version: v1 (Grand Proof II)
   classic 4.8803 kept for comparison).
 - γ_Meral = 0.29847153 vs Cornell 0.295 ± 0.010 (0.35σ); Yukawa-screened core
   (δγ = 0.16352706, Rc = 1.136364 GeV⁻¹): charmonium 596.89 MeV (1.31%),
-  bottomonium 522.25 MeV (7.24%), both same-sided.
+  bottomonium 522.25 MeV (7.24%), both same-sided; C_F = 4/3 Casimir companion
+  column: c-c̄ 602.92 (2.33%), b-b̄ 550.62 (2.19%).
 
 ## Numerical reproduction
 
