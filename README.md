@@ -2,11 +2,13 @@
 
 > **Türkçe:** [README_TR.md](./README_TR.md)
 
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
+
 **Grand Proof II: From Navier–Stokes Vortex Saturation to the 4D SU(3) Yang–Mills Mass-Gap Isomorphism and the Lattice QCD Glueball Spectrum**
 
 Author: Fahri Meral · Date: October 19, 2026 · Version: v1 (Grand Proof II)
 
-> **Status:** Unpublished preprint (v1). Not peer-reviewed.
+> **Status:** Unpublished preprint (v1). Not peer-reviewed. *Zenodo DOI pending deposit.*
 
 ## Contents
 
@@ -21,18 +23,26 @@ Author: Fahri Meral · Date: October 19, 2026 · Version: v1 (Grand Proof II)
 | `CITATION.cff` | Citation record |
 | `LICENSE` | CC BY 4.0 |
 
-## Results (zero free parameters)
+## Key findings
 
-- Flux-tube operator (FV, p = 2.0000): λ₀^cont = 5.610204; numeric bridge
-  √(2λ₀) = 3.349688 (1.23% from closed form); gap(0⁺⁺) = 3.3914463
-  vs LQCD 3.405 ± 0.021 (0.40%, 0.65σ). OPEN RETRACTION: the GP-II/GP-II.1
-  u-form λ₀ = 5.9158 was wrong (violated the variational bound 5.6468).
-- Glueball spectrum 0⁺⁺/2⁺⁺/topological 0⁻⁺/0*⁺⁺ mean 1.56% (non-topological
-  classic 4.8803 kept for comparison).
-- γ_Meral = 0.29847153 vs Cornell 0.295 ± 0.010 (0.35σ); Yukawa-screened core
-  (δγ = 0.16352706, Rc = 1.136364 GeV⁻¹): charmonium 596.89 MeV (1.31%),
-  bottomonium 522.25 MeV (7.24%), both same-sided; C_F = 4/3 Casimir companion
-  column: c-c̄ 602.92 (2.33%), b-b̄ 550.62 (2.19%).
+- **T32 (Theorem GP-II.1):** nonsingular flux-tube potential
+  `V_eff(x) = (1+β₀²)/(x²+β₀²) + C_univ²(1+µ_s)x²` with the **analytic,
+  grid-independent** Temple–Kato enclosure
+  `λ₀ ∈ [5.4806777821, 5.7674115648]` (fixed-`α`) and
+  `λ₀ ∈ [5.3686426884, 5.6467530803]` (optimized bound); the finite-volume
+  continuum limit `λ₀^cont = 5.6102039939` (independently confirmed by
+  shooting: `5.6102039940`) lies inside both, with Richardson order
+  `p = 1.99995`. The closed-form gap `Δm_gap/√σ = 3.3914463` differs from
+  Lattice QCD `3.405 ± 0.021` by 0.40 % (0.65 σ).
+- **T33 (Theorem GP-II.2):** glueball spectrum `0^{++}`, `2^{++}`, topological
+  `0^{-+}`, `0^{*++}` with 1.56 % mean deviation from Lattice QCD; the
+  chiral-dressing and topological factors are labelled *extra model
+  interpretations*, not derived relations.
+- **T34 (Theorem GP-II.3):** `γ_Meral = (π/12)(1+4κ/5) = 0.29847153` versus
+  the Cornell coefficient `0.295 ± 0.010` (0.35 σ); with the Yukawa-screened
+  core `δγ = µ_s/1.25` the charmonium `2S−1S` splitting is 596.89 MeV
+  (1.31 %) and the bottomonium 522.25 MeV (7.24 %); the `C_F = 4/3` Casimir
+  column gives 602.92 / 550.62 MeV.
 
 ## Numerical reproduction
 
@@ -42,9 +52,33 @@ Tests T32–T34 are produced with the solver in the **Paper V repository**
 ```bash
 git clone https://github.com/fahrim/stationary-strings-v
 pip install numpy scipy matplotlib
-python duran_sicimler_sim/solver_engine.py   # T1–T34 (34/34 PASS)
-python duran_sicimler_sim/mini_check_gp2.py  # independent cross-check (15/15 PASS)
+python duran_sicimler_sim/solver_engine.py     # T1–T34 (34/34 PASS)
+python duran_sicimler_sim/mini_check_gp2.py    # independent cross-check (17/17 PASS)
+python duran_sicimler_sim/mini_check_audit.py # series-wide audit (9/9 PASS)
 ```
 
-The independent cross-check never imports the solver.
-Figure 1 is produced by the `fig14` function in `generate_figures.py`.
+The independent cross-checks never import the solver. Figure 1 is produced by
+the `fig14` function in `duran_sicimler_sim/generate_figures.py`.
+
+## Citation
+
+```bibtex
+@misc{meral2026grandproofii,
+  author = {Fahri Meral},
+  title  = {Grand Proof II: From Navier-Stokes Vortex Saturation to the 4D SU(3) Yang-Mills Mass-Gap Isomorphism and the Lattice QCD Glueball Spectrum},
+  year   = {2026},
+  url    = {https://github.com/fahrim/grand-proof-ii}
+}
+```
+
+See also `CITATION.cff`.
+
+## Related work
+
+- `stationary-strings-i` … `stationary-strings-x` — Theorems I–X (the parent series).
+- `grand-proof-i` — Dark-matter-free galactic dynamics, SPARC, EHT rings.
+- `grand-proof-iii` — Benchtop vortex PIV, Vela glitches, Na-22 positronium.
+
+## License
+
+CC BY 4.0 — see `LICENSE`. Content is not peer-reviewed.

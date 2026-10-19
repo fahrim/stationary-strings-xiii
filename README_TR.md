@@ -2,11 +2,13 @@
 
 > **English:** [README.md](./README.md)
 
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
+
 **Grand Proof II: Navier–Stokes Girdap Doyumundan 4B SU(3) Yang–Mills Kütle Aralığına İzomorfizm ve Lattice QCD Glueball Spektrumu**
 
 Yazar: Fahri Meral · Tarih: 19 Ekim 2026 · Sürüm: v1 (Grand Proof II)
 
-> **Durum:** Yayımlanmamış ön-baskı (v1). Hakem denetiminden geçmemiştir.
+> **Durum:** Yayımlanmamış ön-baskı (v1). Hakem denetiminden geçmemiştir. *Zenodo DOI'si yüklemeyi bekliyor.*
 
 ## İçerik
 
@@ -21,18 +23,23 @@ Yazar: Fahri Meral · Tarih: 19 Ekim 2026 · Sürüm: v1 (Grand Proof II)
 | `CITATION.cff` | Atıf kaydı |
 | `LICENSE` | CC BY 4.0 |
 
-## Sonuçlar (sıfır serbest parametre)
+## Ana bulgular
 
-- Akı-tüpü operatörü (FV, p = 2,0000): λ₀^cont = 5,610204; sayısal köprü
-  √(2λ₀) = 3,349688 (kapalı-formla %1,23); aralık(0⁺⁺) = 3,3914463,
-  LQCD 3,405 ± 0,021 ile %0,40 (0,65σ). AÇIK GERİ ÇEKME: GP-II/GP-II.1
-  `u`-formu λ₀ = 5,9158 yanlıştı (varyasyonel sınır 5,6468 ihlali).
-- Glueball spektrumu 0⁺⁺/2⁺⁺/topolojik 0⁻⁺/0*⁺⁺ ortalama %1,56 (topolojisiz
-  klasik 4,8803 karşılaştırma için korunur).
-- γ_Meral = 0,29847153, Cornell 0,295 ± 0,010 ile 0,35σ; Yukawa-perdelemeli
-  çekirdek (δγ = 0,16352706, Rc = 1,136364 GeV⁻¹): charmonium 596,89 MeV (%1,31),
-  bottomonium 522,25 MeV (%7,24), ikisi de aynı işaretli; C_F = 4/3 Casimir
-  tamamlayıcı sütunu: c-c̄ 602,92 (%2,33), b-b̄ 550,62 (%2,19).
+- **T32 (Teorem GP-II.1):** tekilliksiz akı-tüpü potansiyeli
+  `V_eff(x) = (1+β₀²)/(x²+β₀²) + C_univ²(1+µ_s)x²` ile **analitik ve
+  ızgaradan bağımsız** Temple–Kato çerçevelemesi
+  `λ₀ ∈ [5,4806777821, 5,7674115648]` (sabit-`α`) ve
+  `λ₀ ∈ [5,3686426884, 5,6467530803]` (optimize sınır); sonlu-hacim süreklilik
+  limiti `λ₀^cont = 5,6102039939` (bağımsız shooting ile `5,6102039940`) her
+  ikisinin de içindedir; Richardson mertebesi `p = 1,99995`. Kapalı-form aralık
+  `Δm_gap/√σ = 3,3914463`, Lattice QCD `3,405 ± 0,021` ile %0,40 (0,65σ).
+- **T33 (Teorem GP-II.2):** `0^{++}`, `2^{++}`, topolojik `0^{-+}`, `0^{*++}`
+  glueball spektrumu Lattice QCD ile ortalama %1,56 sapma; kiral giydirme ve
+  topolojik çarpanlar *türetilmiş değil, ek model yorumu* olarak etiketlidir.
+- **T34 (Teorem GP-II.3):** `γ_Meral = (π/12)(1+4κ/5) = 0,29847153` Cornell
+  katsayısı `0,295 ± 0,010` ile 0,35σ; Yukawa-perdelemeli çekirdek
+  `δγ = µ_s/1,25` ile charmonium `2S−1S` 596,89 MeV (%1,31), bottomonium
+  522,25 MeV (%7,24); `C_F = 4/3` Casimir sütunu 602,92 / 550,62 MeV.
 
 ## Sayısal yeniden-üretim
 
@@ -42,9 +49,33 @@ T32–T34 testleri **Makale V deposundaki** çözücüyle üretilir
 ```bash
 git clone https://github.com/fahrim/stationary-strings-v
 pip install numpy scipy matplotlib
-python duran_sicimler_sim/solver_engine.py   # T1–T34 (34/34 PASS)
-python duran_sicimler_sim/mini_check_gp2.py  # bağımsız çapraz kontrol (15/15 PASS)
+python duran_sicimler_sim/solver_engine.py     # T1–T34 (34/34 PASS)
+python duran_sicimler_sim/mini_check_gp2.py    # bağımsız çapraz kontrol (17/17 PASS)
+python duran_sicimler_sim/mini_check_audit.py # seri geneli denetim (9/9 PASS)
 ```
 
-Bağımsız çapraz kontrol çözücüyü import etmez.
-Şekil 1, `generate_figures.py` içindeki `fig14` işleviyle üretilir.
+Bağımsız çapraz kontroller çözücüyü import etmez. Şekil 1,
+`duran_sicimler_sim/generate_figures.py` içindeki `fig14` işleviyle üretilir.
+
+## Atıf
+
+```bibtex
+@misc{meral2026grandproofii,
+  author = {Fahri Meral},
+  title  = {Grand Proof II: Navier-Stokes Girdap Doyumundan 4B SU(3) Yang-Mills Kitle Araligina Izomorfizm ve Lattice QCD Glueball Spektrumu},
+  year   = {2026},
+  url    = {https://github.com/fahrim/grand-proof-ii}
+}
+```
+
+Ayrıca bkz. `CITATION.cff`.
+
+## İlgili çalışmalar
+
+- `stationary-strings-i` … `stationary-strings-x` — Teoremler I–X (ana seri).
+- `grand-proof-i` — Karanlık-maddesiz galaktik dinamik, SPARC, EHT halkaları.
+- `grand-proof-iii` — Masaüstü girdap PIV, Vela glitch, Na-22 pozitronyum.
+
+## Lisans
+
+CC BY 4.0 — bkz. `LICENSE`. İçerik hakem denetiminden geçmemiştir.
