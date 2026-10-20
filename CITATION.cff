@@ -1,11 +1,12 @@
 cff-version: 1.2.0
-title: "Stationary Strings XIII: From Navier-Stokes Vortex Saturation to the 4D SU(3) Yang-Mills Mass-Gap Isomorphism and the Lattice QCD Glueball Spectrum"
+title: "Stationary Strings XIII: From Navier-Stokes Vortex Saturation to the 4D SU(3) Yang-Mills Mass-Gap Bridge and the Lattice QCD Glueball Spectrum"
 message: "If you use this work, please cite it."
 type: unpublished
 authors:
   - family-names: Meral
     given-names: Fahri
-doi: 10.5281/zenodo.23517479
+doi: 10.5281/zenodo.23519595
+conceptdoi: 10.5281/zenodo.23517478
 date-released: 2026-10-19
 version: v1
 repository-code: "https://github.com/fahrim/stationary-strings-xiii"

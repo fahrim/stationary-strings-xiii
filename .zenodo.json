@@ -1,5 +1,5 @@
 {
-  "title": "Stationary Strings XIII: From Navier-Stokes Vortex Saturation to the 4D SU(3) Yang-Mills Mass-Gap Isomorphism and the Lattice QCD Glueball Spectrum",
+  "title": "Stationary Strings XIII: From Navier-Stokes Vortex Saturation to the 4D SU(3) Yang-Mills Mass-Gap Bridge and the Lattice QCD Glueball Spectrum",
   "description": "Second link of the Stationary Strings series (October 2026): nonsingular Yang-Mills flux-tube operator with an analytic grid-independent Temple-Kato enclosure of the ground eigenvalue, lambda_0 in [5.4807, 5.7674] bracketing the finite-volume continuum limit 5.6102040 (Theorem XIII.1, Test T32), glueball spectrum 0++, 2++, topological 0-+, 0*++ with 1.56 percent mean deviation from Lattice QCD (Theorem XIII.2, Test T33), Cornell-Luscher-Meral quark confinement with Yukawa-screened and C_F = 4/3 Casimir cores for charmonium and bottomonium (Theorem XIII.3, Test T34), and independent 17-point cross-check plus a 9-point series-wide audit. Full paper in Turkish and English. Tests T32-T34 run with the solver in the Paper V repository (stationary-strings-v).",
   "creators": [
     {

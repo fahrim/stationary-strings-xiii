@@ -4,11 +4,14 @@
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
 
-**Stationary Strings XIII: Navier–Stokes Girdap Doyumundan 4B SU(3) Yang–Mills Kütle Aralığına İzomorfizm ve Lattice QCD Glueball Spektrumu**
+**Stationary Strings XIII: Navier–Stokes Girdap Doyumundan 4B SU(3) Yang–Mills Kütle Aralığı Köprüsüne ve Lattice QCD Glueball Spektrumuna**
+
+> **All versions (concept DOI):** [10.5281/zenodo.23517478](https://doi.org/10.5281/zenodo.23517478)  
+> **Previous version (v1):** [10.5281/zenodo.23517479](https://doi.org/10.5281/zenodo.23517479)
 
 Yazar: Fahri Meral · Tarih: 19 Ekim 2026 · Sürüm: v1 (Stationary Strings XIII)
 
-> **Durum:** Yayımlanmamış ön-baskı (v1). Hakem denetiminden geçmemiştir. *[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23517479-blue.svg)](https://doi.org/10.5281/zenodo.23517479)*
+> **Durum:** Yayımlanmamış ön-baskı (v1). Hakem denetiminden geçmemiştir. *[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23519595-blue.svg)](https://doi.org/10.5281/zenodo.23519595)*
 
 ## İçerik
 
@@ -62,10 +65,10 @@ Bağımsız çapraz kontroller çözücüyü import etmez. Şekil 1,
 ```bibtex
 @misc{meral2026grandproofii,
   author = {Fahri Meral},
-  title  = {Stationary Strings XIII: Navier-Stokes Girdap Doyumundan 4B SU(3) Yang-Mills Kitle Araligina Izomorfizm ve Lattice QCD Glueball Spektrumu},
+  title  = {Stationary Strings XIII: Navier-Stokes Girdap Doyumundan 4B SU(3) Yang-Mills Kitle Araligi Koprusune ve Lattice QCD Glueball Spektrumuna},
   year   = {2026},
   url    = {https://github.com/fahrim/stationary-strings-xiii},
-  doi    = {10.5281/zenodo.23517479},
+  doi    = {10.5281/zenodo.23519595},
 }
 ```
 

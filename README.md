@@ -4,11 +4,14 @@
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
 
-**Stationary Strings XIII: From Navier–Stokes Vortex Saturation to the 4D SU(3) Yang–Mills Mass-Gap Isomorphism and the Lattice QCD Glueball Spectrum**
+**Stationary Strings XIII: From Navier–Stokes Vortex Saturation to the 4D SU(3) Yang–Mills Mass-Gap Bridge and the Lattice QCD Glueball Spectrum**
+
+> **All versions (concept DOI):** [10.5281/zenodo.23517478](https://doi.org/10.5281/zenodo.23517478)  
+> **Previous version (v1):** [10.5281/zenodo.23517479](https://doi.org/10.5281/zenodo.23517479)
 
 Author: Fahri Meral · Date: October 19, 2026 · Version: v1 (Stationary Strings XIII)
 
-> **Status:** Unpublished preprint (v1). Not peer-reviewed. *[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23517479-blue.svg)](https://doi.org/10.5281/zenodo.23517479)*
+> **Status:** Unpublished preprint (v1). Not peer-reviewed. *[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23519595-blue.svg)](https://doi.org/10.5281/zenodo.23519595)*
 
 ## Contents
 
@@ -65,10 +68,10 @@ the `fig14` function in `duran_sicimler_sim/generate_figures.py`.
 ```bibtex
 @misc{meral2026grandproofii,
   author = {Fahri Meral},
-  title  = {Stationary Strings XIII: From Navier-Stokes Vortex Saturation to the 4D SU(3) Yang-Mills Mass-Gap Isomorphism and the Lattice QCD Glueball Spectrum},
+  title  = {Stationary Strings XIII: From Navier-Stokes Vortex Saturation to the 4D SU(3) Yang-Mills Mass-Gap Bridge and the Lattice QCD Glueball Spectrum},
   year   = {2026},
   url    = {https://github.com/fahrim/stationary-strings-xiii},
-  doi    = {10.5281/zenodo.23517479},
+  doi    = {10.5281/zenodo.23519595},
 }
 ```
 
