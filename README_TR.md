@@ -64,7 +64,7 @@ Bağımsız çapraz kontroller çözücüyü import etmez. Şekil 1,
   author = {Fahri Meral},
   title  = {Stationary Strings XIII: Navier-Stokes Girdap Doyumundan 4B SU(3) Yang-Mills Kitle Araligina Izomorfizm ve Lattice QCD Glueball Spektrumu},
   year   = {2026},
-  url    = {https://github.com/fahrim/stationary-strings-xiii}
+  url    = {https://github.com/fahrim/stationary-strings-xiii},
   doi    = {10.5281/zenodo.23517479},
 }
 ```

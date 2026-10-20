@@ -67,7 +67,7 @@ the `fig14` function in `duran_sicimler_sim/generate_figures.py`.
   author = {Fahri Meral},
   title  = {Stationary Strings XIII: From Navier-Stokes Vortex Saturation to the 4D SU(3) Yang-Mills Mass-Gap Isomorphism and the Lattice QCD Glueball Spectrum},
   year   = {2026},
-  url    = {https://github.com/fahrim/stationary-strings-xiii}
+  url    = {https://github.com/fahrim/stationary-strings-xiii},
   doi    = {10.5281/zenodo.23517479},
 }
 ```
