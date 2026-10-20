@@ -8,7 +8,7 @@
 
 Author: Fahri Meral · Date: October 19, 2026 · Version: v1 (Stationary Strings XIII)
 
-> **Status:** Unpublished preprint (v1). Not peer-reviewed. *Zenodo DOI pending deposit.*
+> **Status:** Unpublished preprint (v1). Not peer-reviewed. *[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23517479-blue.svg)](https://doi.org/10.5281/zenodo.23517479)*
 
 ## Contents
 
@@ -68,6 +68,7 @@ the `fig14` function in `duran_sicimler_sim/generate_figures.py`.
   title  = {Stationary Strings XIII: From Navier-Stokes Vortex Saturation to the 4D SU(3) Yang-Mills Mass-Gap Isomorphism and the Lattice QCD Glueball Spectrum},
   year   = {2026},
   url    = {https://github.com/fahrim/stationary-strings-xiii}
+  doi    = {10.5281/zenodo.23517479},
 }
 ```
 

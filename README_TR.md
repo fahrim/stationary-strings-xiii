@@ -8,7 +8,7 @@
 
 Yazar: Fahri Meral · Tarih: 19 Ekim 2026 · Sürüm: v1 (Stationary Strings XIII)
 
-> **Durum:** Yayımlanmamış ön-baskı (v1). Hakem denetiminden geçmemiştir. *Zenodo DOI'si yüklemeyi bekliyor.*
+> **Durum:** Yayımlanmamış ön-baskı (v1). Hakem denetiminden geçmemiştir. *[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23517479-blue.svg)](https://doi.org/10.5281/zenodo.23517479)*
 
 ## İçerik
 
@@ -65,6 +65,7 @@ Bağımsız çapraz kontroller çözücüyü import etmez. Şekil 1,
   title  = {Stationary Strings XIII: Navier-Stokes Girdap Doyumundan 4B SU(3) Yang-Mills Kitle Araligina Izomorfizm ve Lattice QCD Glueball Spektrumu},
   year   = {2026},
   url    = {https://github.com/fahrim/stationary-strings-xiii}
+  doi    = {10.5281/zenodo.23517479},
 }
 ```
 
