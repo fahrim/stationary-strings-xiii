@@ -1,12 +1,12 @@
-# Grand Proof II — Publication Package (Grand Proof Series II)
+# Stationary Strings XIII — Publication Package
 
 > **Türkçe:** [README_TR.md](./README_TR.md)
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
 
-**Grand Proof II: From Navier–Stokes Vortex Saturation to the 4D SU(3) Yang–Mills Mass-Gap Isomorphism and the Lattice QCD Glueball Spectrum**
+**Stationary Strings XIII: From Navier–Stokes Vortex Saturation to the 4D SU(3) Yang–Mills Mass-Gap Isomorphism and the Lattice QCD Glueball Spectrum**
 
-Author: Fahri Meral · Date: October 19, 2026 · Version: v1 (Grand Proof II)
+Author: Fahri Meral · Date: October 19, 2026 · Version: v1 (Stationary Strings XIII)
 
 > **Status:** Unpublished preprint (v1). Not peer-reviewed. *Zenodo DOI pending deposit.*
 
@@ -14,8 +14,8 @@ Author: Fahri Meral · Date: October 19, 2026 · Version: v1 (Grand Proof II)
 
 | File | Description |
 |---|---|
-| `paper/grand_proof_II_yang_mills_kutle_araligi.tex` | Main paper, Turkish (Tables 1–3, Figure 1 2×2) |
-| `paper/grand_proof_II_yang_mills_mass_gap_EN.tex` | English version |
+| `paper/stationary_strings_XIII_yang_mills_kutle_araligi.tex` | Main paper, Turkish (Tables 1–3, Figure 1 2×2) |
+| `paper/stationary_strings_XIII_yang_mills_mass_gap_EN.tex` | English version |
 | `figs/fig14_yang_mills_mass_gap_glueballs_and_confinement.pdf` | Tests T32–T34 figure (TR, 2×2) |
 | `figs/fig14_yang_mills_mass_gap_glueballs_and_confinement.png` | Tests T32–T34 figure preview (TR) |
 | `figs/fig14_yang_mills_mass_gap_glueballs_and_confinement_en.pdf` | Tests T32–T34 figure (EN, 2×2) |
@@ -25,7 +25,7 @@ Author: Fahri Meral · Date: October 19, 2026 · Version: v1 (Grand Proof II)
 
 ## Key findings
 
-- **T32 (Theorem GP-II.1):** nonsingular flux-tube potential
+- **T32 (Theorem XIII.1):** nonsingular flux-tube potential
   `V_eff(x) = (1+β₀²)/(x²+β₀²) + C_univ²(1+µ_s)x²` with the **analytic,
   grid-independent** Temple–Kato enclosure
   `λ₀ ∈ [5.4806777821, 5.7674115648]` (fixed-`α`) and
@@ -34,11 +34,11 @@ Author: Fahri Meral · Date: October 19, 2026 · Version: v1 (Grand Proof II)
   shooting: `5.6102039940`) lies inside both, with Richardson order
   `p = 1.99995`. The closed-form gap `Δm_gap/√σ = 3.3914463` differs from
   Lattice QCD `3.405 ± 0.021` by 0.40 % (0.65 σ).
-- **T33 (Theorem GP-II.2):** glueball spectrum `0^{++}`, `2^{++}`, topological
+- **T33 (Theorem XIII.2):** glueball spectrum `0^{++}`, `2^{++}`, topological
   `0^{-+}`, `0^{*++}` with 1.56 % mean deviation from Lattice QCD; the
   chiral-dressing and topological factors are labelled *extra model
   interpretations*, not derived relations.
-- **T34 (Theorem GP-II.3):** `γ_Meral = (π/12)(1+4κ/5) = 0.29847153` versus
+- **T34 (Theorem XIII.3):** `γ_Meral = (π/12)(1+4κ/5) = 0.29847153` versus
   the Cornell coefficient `0.295 ± 0.010` (0.35 σ); with the Yukawa-screened
   core `δγ = µ_s/1.25` the charmonium `2S−1S` splitting is 596.89 MeV
   (1.31 %) and the bottomonium 522.25 MeV (7.24 %); the `C_F = 4/3` Casimir
@@ -65,9 +65,9 @@ the `fig14` function in `duran_sicimler_sim/generate_figures.py`.
 ```bibtex
 @misc{meral2026grandproofii,
   author = {Fahri Meral},
-  title  = {Grand Proof II: From Navier-Stokes Vortex Saturation to the 4D SU(3) Yang-Mills Mass-Gap Isomorphism and the Lattice QCD Glueball Spectrum},
+  title  = {Stationary Strings XIII: From Navier-Stokes Vortex Saturation to the 4D SU(3) Yang-Mills Mass-Gap Isomorphism and the Lattice QCD Glueball Spectrum},
   year   = {2026},
-  url    = {https://github.com/fahrim/grand-proof-ii}
+  url    = {https://github.com/fahrim/stationary-strings-xiii}
 }
 ```
 
@@ -76,8 +76,8 @@ See also `CITATION.cff`.
 ## Related work
 
 - `stationary-strings-i` … `stationary-strings-x` — Theorems I–X (the parent series).
-- `grand-proof-i` — Dark-matter-free galactic dynamics, SPARC, EHT rings.
-- `grand-proof-iii` — Benchtop vortex PIV, Vela glitches, Na-22 positronium.
+- `stationary-strings-xii` — Dark-matter-free galactic dynamics, SPARC, EHT rings.
+- `stationary-strings-xiv` — Benchtop vortex PIV, Vela glitches, Na-22 positronium.
 
 ## License
 

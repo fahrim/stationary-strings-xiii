@@ -1,12 +1,12 @@
-# Grand Proof II — Yayın Paketi (Büyük Kanıt Serisi II)
+# Stationary Strings XIII — Yayın Paketi
 
 > **English:** [README.md](./README.md)
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
 
-**Grand Proof II: Navier–Stokes Girdap Doyumundan 4B SU(3) Yang–Mills Kütle Aralığına İzomorfizm ve Lattice QCD Glueball Spektrumu**
+**Stationary Strings XIII: Navier–Stokes Girdap Doyumundan 4B SU(3) Yang–Mills Kütle Aralığına İzomorfizm ve Lattice QCD Glueball Spektrumu**
 
-Yazar: Fahri Meral · Tarih: 19 Ekim 2026 · Sürüm: v1 (Grand Proof II)
+Yazar: Fahri Meral · Tarih: 19 Ekim 2026 · Sürüm: v1 (Stationary Strings XIII)
 
 > **Durum:** Yayımlanmamış ön-baskı (v1). Hakem denetiminden geçmemiştir. *Zenodo DOI'si yüklemeyi bekliyor.*
 
@@ -14,8 +14,8 @@ Yazar: Fahri Meral · Tarih: 19 Ekim 2026 · Sürüm: v1 (Grand Proof II)
 
 | Dosya | Açıklama |
 |---|---|
-| `paper/grand_proof_II_yang_mills_kutle_araligi.tex` | Ana makale, Türkçe (Tablo 1–3, Şekil 1 2×2) |
-| `paper/grand_proof_II_yang_mills_mass_gap_EN.tex` | İngilizce sürüm |
+| `paper/stationary_strings_XIII_yang_mills_kutle_araligi.tex` | Ana makale, Türkçe (Tablo 1–3, Şekil 1 2×2) |
+| `paper/stationary_strings_XIII_yang_mills_mass_gap_EN.tex` | İngilizce sürüm |
 | `figs/fig14_yang_mills_mass_gap_glueballs_and_confinement.pdf` | T32–T34 şekli (TR, 2×2) |
 | `figs/fig14_yang_mills_mass_gap_glueballs_and_confinement.png` | T32–T34 şekil önizlemesi (TR) |
 | `figs/fig14_yang_mills_mass_gap_glueballs_and_confinement_en.pdf` | T32–T34 şekli (EN, 2×2) |
@@ -25,7 +25,7 @@ Yazar: Fahri Meral · Tarih: 19 Ekim 2026 · Sürüm: v1 (Grand Proof II)
 
 ## Ana bulgular
 
-- **T32 (Teorem GP-II.1):** tekilliksiz akı-tüpü potansiyeli
+- **T32 (Teorem XIII.1):** tekilliksiz akı-tüpü potansiyeli
   `V_eff(x) = (1+β₀²)/(x²+β₀²) + C_univ²(1+µ_s)x²` ile **analitik ve
   ızgaradan bağımsız** Temple–Kato çerçevelemesi
   `λ₀ ∈ [5,4806777821, 5,7674115648]` (sabit-`α`) ve
@@ -33,10 +33,10 @@ Yazar: Fahri Meral · Tarih: 19 Ekim 2026 · Sürüm: v1 (Grand Proof II)
   limiti `λ₀^cont = 5,6102039939` (bağımsız shooting ile `5,6102039940`) her
   ikisinin de içindedir; Richardson mertebesi `p = 1,99995`. Kapalı-form aralık
   `Δm_gap/√σ = 3,3914463`, Lattice QCD `3,405 ± 0,021` ile %0,40 (0,65σ).
-- **T33 (Teorem GP-II.2):** `0^{++}`, `2^{++}`, topolojik `0^{-+}`, `0^{*++}`
+- **T33 (Teorem XIII.2):** `0^{++}`, `2^{++}`, topolojik `0^{-+}`, `0^{*++}`
   glueball spektrumu Lattice QCD ile ortalama %1,56 sapma; kiral giydirme ve
   topolojik çarpanlar *türetilmiş değil, ek model yorumu* olarak etiketlidir.
-- **T34 (Teorem GP-II.3):** `γ_Meral = (π/12)(1+4κ/5) = 0,29847153` Cornell
+- **T34 (Teorem XIII.3):** `γ_Meral = (π/12)(1+4κ/5) = 0,29847153` Cornell
   katsayısı `0,295 ± 0,010` ile 0,35σ; Yukawa-perdelemeli çekirdek
   `δγ = µ_s/1,25` ile charmonium `2S−1S` 596,89 MeV (%1,31), bottomonium
   522,25 MeV (%7,24); `C_F = 4/3` Casimir sütunu 602,92 / 550,62 MeV.
@@ -62,9 +62,9 @@ Bağımsız çapraz kontroller çözücüyü import etmez. Şekil 1,
 ```bibtex
 @misc{meral2026grandproofii,
   author = {Fahri Meral},
-  title  = {Grand Proof II: Navier-Stokes Girdap Doyumundan 4B SU(3) Yang-Mills Kitle Araligina Izomorfizm ve Lattice QCD Glueball Spektrumu},
+  title  = {Stationary Strings XIII: Navier-Stokes Girdap Doyumundan 4B SU(3) Yang-Mills Kitle Araligina Izomorfizm ve Lattice QCD Glueball Spektrumu},
   year   = {2026},
-  url    = {https://github.com/fahrim/grand-proof-ii}
+  url    = {https://github.com/fahrim/stationary-strings-xiii}
 }
 ```
 
@@ -73,8 +73,8 @@ Ayrıca bkz. `CITATION.cff`.
 ## İlgili çalışmalar
 
 - `stationary-strings-i` … `stationary-strings-x` — Teoremler I–X (ana seri).
-- `grand-proof-i` — Karanlık-maddesiz galaktik dinamik, SPARC, EHT halkaları.
-- `grand-proof-iii` — Masaüstü girdap PIV, Vela glitch, Na-22 pozitronyum.
+- `stationary-strings-xii` — Karanlık-maddesiz galaktik dinamik, SPARC, EHT halkaları.
+- `stationary-strings-xiv` — Masaüstü girdap PIV, Vela glitch, Na-22 pozitronyum.
 
 ## Lisans
 
